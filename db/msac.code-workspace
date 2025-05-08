@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "msac",
+			"path": ".."
+		},
+		{
+			"name": "fonts",
+			"path": "../../../msac-drupal/themes/custom/msac/idfive-component-library/fractal/themes/mandelbrot/fonts"
+		}
+	],
+	"settings": {}
+}

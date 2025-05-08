@@ -1,0 +1,134 @@
+{
+  "artists": [
+    {
+      "id": "31a2",
+      "artist_name": "Eryn Michel",
+      "location": "new york",
+      "art_type": "sculpture",
+      "booking_price": "200",
+      "engagement_type": "workshop",
+      "a&e_district": "downtown",
+      "population_type": "families"
+    },
+    {
+      "id": "0e18",
+      "artist_name": "Caroline",
+      "location": "baltimore city",
+      "art_type": "design/digital",
+      "booking_price": "200",
+      "engagement_type": "residency",
+      "a&e_district": "Gateway A&E  District",
+      "population_type": "Veterans/Military"
+    },
+    {
+      "id": "a587",
+      "artist_name": "pam the kindersinger",
+      "location": "baltimore city",
+      "art_type": "performance, dance, music/sound",
+      "booking_price": "< $500",
+      "engagement_type": "residency",
+      "a&e_district": "Gateway A&E  District",
+      "population_type": "Veterans/Military"
+    },
+    {
+      "id": "4cf6",
+      "artist_name": "wellington",
+      "location": "calvert",
+      "art_type": "performance, dance, music/sound",
+      "booking_price": "$500-$1,000",
+      "engagement_type": "lectures",
+      "a&e_district": "Frostburg A&E  District",
+      "population_type": "Grade 3-5"
+    },
+    {
+      "id": "7668",
+      "artist_name": "Anthony McCray Photo Co.",
+      "location": "baltimore",
+      "art_type": "visual/media, photography",
+      "booking_price": "$500-$1,000",
+      "engagement_type": "visiting performance",
+      "a&e_district": "Elkton A&E  District",
+      "population_type": "Early childhood (0-3 years old)"
+    },
+    {
+      "id": "849c",
+      "artist_name": "Anthony McCray Photo Co.",
+      "location": "baltimore",
+      "art_type": "visual/media, photography",
+      "booking_price": "$500-$1,000",
+      "engagement_type": "visiting performance",
+      "a&e_district": "Elkton A&E  District",
+      "population_type": "Early childhood (0-3 years old)"
+    },
+    {
+      "id": "34cc",
+      "artist_name": "Steven Barker",
+      "location": "washington",
+      "art_type": "performance, theatre",
+      "booking_price": "$1,000-$2,000",
+      "engagement_type": "workshop",
+      "a&e_district": "Denton A&E  District",
+      "population_type": "English language learners"
+    },
+    {
+      "id": "4148",
+      "artist_name": "Theresa Kelley",
+      "location": "howard",
+      "art_type": "visual/Media, drawing, painting, paper/book/illustration, craft",
+      "booking_price": "$2,000-$3,000",
+      "engagement_type": "workshop",
+      "a&e_district": "Highlandtown A&E  District",
+      "population_type": "high school (9-12 grade)"
+    },
+    {
+      "id": "e0a9",
+      "artist_name": "Roy Furchgott Photography",
+      "location": "washington",
+      "art_type": "visual/media, photography",
+      "booking_price": "$3,000-$5,000",
+      "engagement_type": "out of school time",
+      "a&e_district": "Black Atrs District",
+      "population_type": "people experiencing incarceration/re-entry"
+    },
+    {
+      "id": "6fff",
+      "artist_name": "Roy Furchgott Photography",
+      "location": "baltimore",
+      "art_type": "visual/media, photography",
+      "booking_price": "$3,000-$5,000",
+      "engagement_type": "out of school time",
+      "a&e_district": "Black Atrs District",
+      "population_type": "people experiencing incarceration/re-entry"
+    },
+    {
+      "id": "4d5e",
+      "artist_name": "Elisabeth Running",
+      "location": "allegany",
+      "art_type": "visual/media, ceramic",
+      "booking_price": "$3,000-$5,000",
+      "engagement_type": "online programs",
+      "a&e_district": "Annapolis Atrs District",
+      "population_type": "grades pre-k–2"
+    },
+    {
+      "id": "7bc9",
+      "artist_name": "Monica",
+      "location": "montgumery",
+      "art_type": "visual/media, painting, multimedia, jewelry",
+      "booking_price": ">$5,000",
+      "engagement_type": "field trip",
+      "a&e_district": "Bethesda a&e District",
+      "population_type": "grades pre-k–2"
+    },
+    {
+      "id": "bccc",
+      "artist_name": "Toshima C",
+      "location": "talbot",
+      "art_type": "multidisciplinary, multidisciplinary Art",
+      "booking_price": ">$5,000",
+      "engagement_type": "Professional Development",
+      "a&e_district": "Station North a&e District",
+      "population_type": "People experiencing Homelessness"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1260px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+h1,
+.h1 {
+  color: #000;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0;
+  margin: 2.625rem 0 1.25rem;
+}
+
+@media (min-width: 800px) {
+  h1,
+  .h1 {
+    font-size: 3.5rem !important;
+  }
+}
+h2,
+.h2 {
+  color: #000;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 2.2rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0;
+  line-height: 1.3125;
+  margin: 2.625rem 0 1.25rem;
+}
+
+@media (min-width: 800px) {
+  h2,
+  .h2 {
+    font-size: 2.25rem !important;
+  }
+}
+h3,
+.h3,
+.carousel__slide-title,
+.msac_profiles__form-wrap > form > fieldset > legend > .fieldset-legend {
+  color: #940100;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.625rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0;
+  margin: 2.625rem 0 1.25rem;
+}
+
+@media (min-width: 800px) {
+  h3,
+  .h3,
+  .carousel__slide-title,
+  .msac_profiles__form-wrap > form > fieldset > legend > .fieldset-legend {
+    font-size: 1.75rem !important;
+  }
+}
+h4,
+.h4,
+.card__title,
+.msac_profiles__form-wrap .field--widget-options-shs .form-item label,
+.msac_profiles__form-wrap .js-form-type-managed-file > label {
+  color: #000;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.375rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0;
+  margin: 2.625rem 0 1.25rem;
+}
+
+h5,
+.h5 {
+  color: #940100;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.25rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0;
+  margin: 2.5rem 0 1.25rem;
+}
+
+h6,
+.h6,
+.aside__section-heading {
+  color: #000;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.10938em;
+  margin: 2.5rem 0 1.25rem;
+  text-transform: uppercase;
+}
+
+.arrow {
+  position: relative;
+}
+.arrow::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -25px;
+  width: 22px;
+  height: 18px;
+  background: url(/images/icon-arrow.svg) no-repeat center;
+  background-size: 100%;
+  transition: all ease-in-out 0.2s;
+  z-index: 2;
+}
+
+.open {
+  max-height: 100rem !important;
+}
+
+#wrapper {
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=global.css.map */

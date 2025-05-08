@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" href="/favicon.ico" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>msac artists</title>
+   
+    <link rel="stylesheet" href="styles/main.css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+    
+  </head>
+  <body>
+
+    <section class="artist-filter py-[50px] ">
+        <div class="container">
+            <h1 class="h1 text-center mb-8  font-bold">Artists</h1>
+            <h2 class="h2 font-bold mb-4">Refine Result</h2>
+            <div class="mb-8">
+                <h5 class="text-lg font-medium mb-[10px]">I Want to...</h5>
+                <div class="relative filter-wrap" id="filter_type">
+                    <input id="filter-by" class="p-[10px] pr-[30px] relative cursor-pointer w-full h-[50px] border-[1px] border-[#940100] rounded-[5px]" type="text" value="Find an Artist"   readonly>
+                    <ul class=" absolute  w-full top-[50px] left-0 h-0 overflow-hidden transition-all duration-300">
+                      <!-- <li data-value="">Browse Artwork</li> -->
+                      <li class="cursor-pointer" data-value="artist"> <a href="/?page=artist">Find an Artist</a></li>
+                      <li class="cursor-pointer" data-value="organizations" class="selected"><a href="/?page=organizations">Find Art Organizations and Business</a></li>
+                      <li class="cursor-pointer" data-value="entertainment"><a href="/?page=entertainment">Explore Arts and Entertainment Districts</a></li>
+                      <li class="cursor-pointer" data-value="presenting-rosters"><a href="/?page=presenting-rosters">View the Presenting and Touring Roster</a></li>
+                      <li class="cursor-pointer" data-value="teaching-rosters"><a href="/?page=teaching-rosters">View the Teaching Artist Roster</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-[20px]">
+              <span class="dowpdown-toggle text-[#940100] cursor-pointer font-[600]">Show More Filters  +</span>
+            </div>
+            <div id="wrapper" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 duration-300 max-h-0 overflow-hidden ">
+              <div class="grid gap-2">
+                <p for="search" class="text-md font-medium ">Search</p>
+                <input class="p-[10px] pr-[30px]  w-full h-[50px] border-[1px] border-[#940100] rounded-[5px]" type="text" id="search-box" placeholder="Search by keywords..." class="w-full max-w-full">
+              </div>
+              <div class="grid gap-2">
+                <p class="text-md font-medium">Located In</p>
+                <div class="relative filter-wrap">
+                    <input class="p-[10px] pr-[30px] cursor-pointer w-full h-[50px] border-[1px] border-[#940100] rounded-[5px]" type="text" value="" placeholder="Select location" readonly>
+                    <ul id="location" class=" absolute  w-full top-[50px] left-0 h-0 overflow-hidden transition-all duration-300">
+                      <li data-value="">New York</li>
+                      <li data-value="workshops">Find an Artist</li>
+                      <li data-value="performances" class="selected">Los Angeles</li>
+                      <li data-value="installations">Chicago</li>
+                      <li data-value="residencies">San Francisco</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="grid gap-2">
+                <p class="text-md font-medium">Type of Art</p>
+                <div class="relative filter-wrap">
+                    <input class="p-[10px] pr-[30px] cursor-pointer w-full h-[50px] border-[1px] border-[#940100] rounded-[5px]" type="text" value="" placeholder="Select art type" readonly>
+                    <ul id="art_type" class=" absolute  w-full top-[50px] left-0 h-0 overflow-hidden transition-all duration-300">
+                      <li data-value="painting">Painting</li>
+                      <li data-value="pculpture">Sculpture</li>
+                      <li data-value="photography" class="selected">Photography</li>
+                      <li data-value="mixed-media">Mixed Media</li>
+                      <li data-value="theatre">Theatre</li>
+                      <li data-value="dance">Dance</li>
+                      <li data-value="fiction">Fiction</li>
+                      <li data-value="poetry">Poetry</li>
+                      <li data-value="graphic">Graphic</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="grid gap-2">
+                <p class="text-md font-medium ">Booking Price</p>
+                <div class="relative filter-wrap">
+                    <input class="p-[10px] pr-[30px] cursor-pointer w-full h-[50px] border-[1px] border-[#940100] rounded-[5px]" type="text" value="" placeholder="Select booking price" readonly>
+                    <ul id="prices" class=" absolute  w-full top-[50px] left-0 h-0 overflow-hidden transition-all duration-300">
+                      <li data-value=""> <$500</li>
+                      <li data-value="performances" class="selected">$500-$1000</li>
+                      <li data-value="installations">$1001-$2000</li>
+                      <li data-value="residencies">$2001-$3000</li>
+                      <li data-value="residencies">$3001-$5000</li>
+                      <li data-value="residencies">>$5000</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="grid gap-2">
+                <p for="ae-district" class="text-md font-medium">A&E District</p>
+                <div class="relative filter-wrap">
+                <input class="p-[10px] pr-[30px] cursor-pointer w-full h-[50px] border-[1px] border-[#940100] rounded-[5px]" type="text" value="" placeholder="Select A&E District" readonly>
+                <ul id="districts" class=" absolute  w-full top-[50px] left-0 h-0 overflow-hidden transition-all duration-300">
+                  <li value="">Select A&E district</li>
+                  <li value="soho">SoHo</li>
+                  <li value="downtown">Downtown</li>
+                  <li value="midtown">Midtown</li>
+                  <li value="brooklyn">Brooklyn</li>
+                </ul>
+                </div>
+              </div>
+              <div class="grid gap-2">
+                <p for="population-type" class="text-md font-medium">Population Type</p>
+                <div class="relative filter-wrap">
+                <input class="p-[10px] pr-[30px] cursor-pointer w-full h-[50px] border-[1px] border-[#940100] rounded-[5px]" type="text" value="" placeholder="Select Population Type" readonly>
+                <ul id="population_type" class=" absolute  w-full top-[50px] left-0 h-0 overflow-hidden transition-all duration-300">
+                  <li value="">Select population type</li>
+                  <li value="families">Families</li>
+                  <li value="youth">Youth</li>
+                  <li value="seniors">Seniors</li>
+                  <li value="adults">Adults</li>
+                </ul>
+                </div>
+              </div>
+              <div class="grid gap-2">
+                <p for="engagement-type" class="text-md font-medium">Engagement Type</p>
+                <div class="relative filter-wrap">
+                    <input class="p-[10px] pr-[30px] cursor-pointer w-full h-[50px] border-[1px] border-[#940100] rounded-[5px]" type="text" value="" placeholder="Select Engagement Type" readonly>
+                <ul id="engagement_type" class=" absolute  w-full top-[50px] left-0 h-0 overflow-hidden transition-all duration-300">
+                  <li value="">Select engagement type</li>
+                  <li value="workshops">Workshops</li>
+                  <li value="performances">Performances</li>
+                  <li value="installations">Installations</li>
+                  <li value="residencies">Residencies</li>
+                </ul>
+            </div>
+              </div>
+            </div>
+            <div class="selected-data pt-[40px] hide">
+                <div id="selected-data" class="inline-block"></div>
+                <h5 id="clear-all" class="inline-block cursor-pointer ml-[40px] underline hover:text-[#940100]">Clear All</h5>
+
+            </div>
+            <div id="hits" class="mt-[50px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Example of an artist card -->
+              <div class="bg-white rounded-lg shadow-md">
+                <img src="./images/default-img.jpg" alt="Artist Name" width="300" height="200" class="rounded-t-lg object-cover w-full aspect-video">
+                <div class="p-4">
+                  <h3 class="text-lg font-semibold">Artist Name</h3>
+                  <p class="text-sm text-muted-foreground">Location | Art Type</p>
+                  <p class="text-sm text-muted-foreground">Booking Price: $500</p>
+                </div>
+                <div class="mt-2 flex justify-between items-center p-4">
+                  <button class="button button-outline button-sm">View Profile</button>
+                  <button class="button button-primary button-sm">Hire</button>
+                </div>
+              </div>
+              <!-- Repeat artist cards as needed -->
+            </div>
+
+            <div class="pagination mt-8 " >
+                <ul class="flex justify-center items-center" id="pagination"></ul>
+            </div>
+          </div>
+
+
+
+          <!-- scripts -->
+          <script src="/scripts/clickHandlers.js"></script>
+          <script type="module" src="/scripts/artistFilter.js"></script>
+        </body>
+</html>
